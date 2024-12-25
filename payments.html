@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMe Payments</title>
+  <link rel="stylesheet" href="payments.css">
+</head>
+<body>
+  <div class="payment-container">
+    <div class="payment-card">
+      <div class="logo">
+        <img src="C:/Users/Asus/OneDrive/Desktop/PUSL2023_Mobile_App_Development/Payments Angular/Website Logo.png" alt="BookMe Logo">
+        <h1>BOOKME</h1>
+      </div>
+      <h2>PAYMENTS</h2>
+      <form id="payment-form">
+        <div class="form-group">
+          <label for="card-holder">Card Holder Name:</label>
+          <input type="text" id="card-holder" placeholder="Enter card holder name" required>
+        </div>
+        <div class="form-group">
+          <label for="card-number">Card Number:</label>
+          <input type="text" id="card-number" placeholder="Enter your card number" maxlength="16" required>
+        </div>
+        <div class="form-group">
+          <label for="expiry">Expiry Date:</label>
+          <input type="text" id="expiry" placeholder="MM/YY" maxlength="5" required>
+        </div>
+        <div class="form-group">
+          <label for="cvv">CVV:</label>
+          <input type="password" id="cvv" placeholder="Enter CVV" maxlength="3" required>
+        </div>
+        <button type="submit" class="pay-btn">Pay with Card</button>
+        <h3>OR</h3>
+        <button type="button" id="paypal-btn" class="paypal-btn">Pay with PayPal</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
